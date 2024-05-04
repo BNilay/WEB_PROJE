@@ -13,15 +13,19 @@
     width: 100%;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+   background-repeat: repeat-y;
     background-attachment: fixed;
-    font-size: large;
+    font-size:large;
+    font: bold;
 }
 
 .anasayfa{
     color: rgb(255, 240, 212);
     margin-top: 60px;
-    font: size 10px; ;
+    font: size 17px; ;
+}
+.onerilerim{
+background-color:  rgb(66, 109, 68);
 }
 
 .nav-item a{
@@ -40,10 +44,6 @@ font-weight: 600;
     background-color: rgb(109, 109, 107);
 }
 
-.sehrimsayfasi{
-    background-color:rgb(139, 175, 157);
-
-}
 
 .carousel {
     max-width: 800px;
@@ -60,5 +60,33 @@ max-height: 450px;
    
 }
 .baslik{
-    background-color: rgb(51, 99, 57);
+background-color: rgba(240, 248, 255, 0);
+   font-style: italic;
+   margin-top: auto;
+    text-align: center;
+}
+
+.sehirbilgi{
+    color: white;
+   font-size: large;
+   font: bold;
+    max-width: 800px;
+    max-height: 600px;
+
+  margin: auto;
+}
+
+.alt{
+    background-color:   rgb(66, 109, 68);
+
+}
+
+  
+.yerler{
+    color: white;
+    margin-top: 80px;
+}
+
+.yerler p{
+    margin-bottom: 40px;
 }
