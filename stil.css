@@ -18,7 +18,15 @@
     font-size:large;
     font: bold;
 }
+.ust-kisim2{
+   background-color: white;
 
+    background-size: cover;
+   background-repeat: repeat-y;
+    background-attachment: fixed;
+    font-size:large;
+    font: bold;
+}
 .anasayfa{
     color: rgb(255, 240, 212);
     margin-top: 60px;
@@ -90,3 +98,40 @@ background-color: rgba(240, 248, 255, 0);
 .yerler p{
     margin-bottom: 40px;
 }
+.resim-container {
+    display: flex;
+    align-items: center; /* Dikeyde ortala */
+    background-color: rgb(66, 109, 68);
+    color: white;
+  }
+  
+  .text-container {
+    margin-left: 20px; /* İstenilen mesafe için */
+  }
+  
+  footer {
+    text-align: center;
+    background-color: rgb(66, 109, 68);
+    color: white;
+}
+
+.ozgecmisresim-container {
+    display: flex;
+    align-items: flex-start; 
+    background-color: rgb(66, 109, 68);
+    color: white;
+}
+
+.ozgecmis-container {
+    background-color: rgb(66, 109, 68);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.ozgecmisresim-container img {
+    margin: auto; /* Resmi sağa hizala */
+    background-color: rgb(66, 109, 68);
+
+}
+
