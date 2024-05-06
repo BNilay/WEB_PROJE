@@ -27,6 +27,8 @@
     font-size:large;
     font: bold;
 }
+
+
 .anasayfa{
     color: rgb(255, 240, 212);
     margin-top: 60px;
@@ -135,3 +137,53 @@ background-color: rgba(240, 248, 255, 0);
 
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+.kitap-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(165, 78, 78);
+    color: white;
+    
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #0e4125;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+#kitaplar {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#kitap-form{
+    background-color:rgb(165, 78, 78) ;
+}
+
+.ilgibody{
+    background-image: url("Adsız tasarım.png"); /* Arkaplan resmi */
+    height: auto; /* Resmin yüksekliği otomatik olarak ayarlanacak */
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y; /* Dikeyde tekrarlama */
+    background-attachment: fixed;
+    font-size: large;
+    font-weight: bold;
+}
