@@ -7,17 +7,7 @@
     background-color: rgba(25, 76, 27, 0.284);
 }
 
-.ust-kisim{
-    background-image: url(Adsız\ tasarım.png);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-   background-repeat: repeat-y;
-    background-attachment: fixed;
-    font-size:large;
-    font: bold;
-}
+
 .ust-kisim2{
    background-color: white;
 
@@ -27,13 +17,39 @@
     font-size:large;
     font: bold;
 }
-
-
-.anasayfa{
-    color: rgb(255, 240, 212);
-    margin-top: 60px;
-    font: size 17px; ;
+body {
+    margin: 0;
+    padding: 0;
 }
+
+
+
+.container-anasayfa{
+    color: white;
+    font: size 17px; ;
+    background-image: url(Adsız\ tasarım.png);
+    background-size: cover;
+    background-position: center center;
+   background-repeat: repeat-y;
+    background-attachment: fixed;
+    font-size:large;
+    font: bold;
+}
+.container-sehrimtum{
+    color: white;
+    font: size 17px; ;
+    background-image: url(Adsız\ tasarım.png);
+    background-size: cover;
+    background-position: center center;
+   background-repeat: repeat-y;
+    background-attachment: fixed;
+    font-size:large;
+    font: bold;
+    margin-bottom: -60px;
+    padding-bottom: -60px;  
+}
+
+
 .onerilerim{
 background-color:  rgb(66, 109, 68);
 }
@@ -102,20 +118,23 @@ background-color: rgba(240, 248, 255, 0);
 }
 .resim-container {
     display: flex;
-    align-items: center; /* Dikeyde ortala */
+    align-items: center; 
     background-color: rgb(66, 109, 68);
     color: white;
   }
   
   .text-container {
-    margin-left: 20px; /* İstenilen mesafe için */
+    margin-left: 20px; 
   }
   
-  footer {
+.footer {
     text-align: center;
     background-color: rgb(66, 109, 68);
     color: white;
+  
+   
 }
+
 
 .ozgecmisresim-container {
     display: flex;
@@ -129,10 +148,17 @@ background-color: rgba(240, 248, 255, 0);
     color: white;
     align-items: center;
     text-align: center;
+    margin-bottom: -60px;
+    padding-bottom: -60px;  
+}
+
+ul {
+    list-style-position: inside; /* Noktaların içeride olmasını sağlar */
+    text-align: center; /* Liste metinlerinin ortalanmasını sağlar */
 }
 
 .ozgecmisresim-container img {
-    margin: auto; /* Resmi sağa hizala */
+    margin: auto;
     background-color: rgb(66, 109, 68);
 
 }
@@ -177,12 +203,12 @@ button:hover {
 }
 
 .ilgibody{
-    background-image: url("Adsız tasarım.png"); /* Arkaplan resmi */
-    height: auto; /* Resmin yüksekliği otomatik olarak ayarlanacak */
+    background-image: url("Adsız tasarım.png");
+    height: auto; 
     width: 100%;
     background-size: cover;
     background-position: center center;
-    background-repeat: repeat-y; /* Dikeyde tekrarlama */
+    background-repeat: repeat-y; 
     background-attachment: fixed;
     font-size: large;
     font-weight: bold;
