@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body class="sayfa" >
 <div class="ust-kisim2">
    <nav class="navbar navbar-expand-lg nav-bg">
   <div class="container p-0">
@@ -68,9 +68,27 @@
 
 
 
-
-
-
+<form action="http://localhost/index.php" method="post" class="centered-form">
+  <div class="formgonder">
+    <table cellspacing="8" class="giristablo">
+      <tr>
+        LÜTFEN GİRİŞ BİLGİLERİNİZİ GİRİN
+      </tr>
+      <tr>
+        <td>KULLANICI ADI</td><td>:</td>
+        <td><input type="email" name="email" required placeholder="öğrenci emailinizi girin" autofocus  ></td>
+      </tr>
+      <tr>
+        <td>ŞİFRE</td><td>:</td>
+        <td><input type="password" name="sifre" required placeholder="öğrenci şifrenizi girin"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="button-container">
+    <input type="submit" name="GONDER" value="Gönder">
+    <input type="reset" name="TEMİZLE" value="Temizle">
+  </div>
+</form>
 
 
 
