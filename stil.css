@@ -192,7 +192,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    background-color:rgb(165, 78, 78);
+    background-color:#6b2121;
     color: white;
     
 }
@@ -220,7 +220,7 @@ button:hover {
 }
 
 #kitap-form{
-    background-color:rgb(165, 78, 78) ;
+    background-color:#6b2121 ;
 }
 
 .ilgibody{
@@ -252,16 +252,18 @@ button:hover {
     justify-content: center; /* Butonları yatay olarak ortalar */
   }
   
-  .button-container input[type="submit"],
+  .button-container input[type="submit"] ,
   .button-container input[type="reset"] {
     margin-left: 10px; /* Butonlar arasındaki boşluğu ayarlar */
+    color: #ffffff;
+    background-color:rgb(41, 76, 43);
   }
   
 .body-background{
     background-repeat: no-repeat;
     background-position: center;
 }
-
+/*giriş sayfasının arkaplanı*/
 .sayfa{
     background-image: url("Adsız tasarım.png");
     height: auto; 
@@ -274,8 +276,103 @@ button:hover {
     font-weight: bold;
     color: white;
   }
-
+/*giriş tablonun arkaplanı */
   .giristablo{
     background-color: rgb(41, 76, 43);
   }
+
+  /*iletişim sayfasının arkaplanı */
+  .iletisimsayfasi{
+    background-image: url("Adsız tasarım.png");
+    height: auto; 
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y; 
+    background-attachment: fixed;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+  }
   
+  .iletisimform{
+   
+    align-items: center;
+    margin-top: 50px;
+    font-size: medium;
+  }
+  .iletisimform label {
+    width: 100px; /* Etiketlerin sabit genişliği */
+    display: inline-block; /* Etiketlerin yan yana sıralanması */
+    margin-top: 10px;
+}
+
+.iletisimform input {
+    padding-left: 60px; /* Giriş alanlarının sola iç içe kaydırılması */
+    margin-top: 10px;
+ 
+}
+
+.secim{
+   margin-left: 100px;
+}
+.list1{
+    margin-left: 100ox;
+}
+
+
+#contactForm {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #6b2121;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm div {
+    margin-bottom: 15px;
+}
+
+#contactForm label {
+    
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="password"],
+#contactForm input[type="file"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+}
+
+#contactForm textarea {
+    resize: vertical; /* Yalnızca yüksekliği değiştirilebilir */
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #6e2d2d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: rgb(66, 109, 68);
+}
