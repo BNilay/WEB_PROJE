@@ -132,7 +132,7 @@
     <button type="button" onclick="validateForm('vue')">Vue.js ile Gönder</button>
 </form-->
 
-<form id="contactForm">
+<form id="contactForm" name="contactForm">
   <div>
       <label for="ad">Adınız:</label>
       <input type="text" id="ad" name="ad" v-model="formData.ad">
@@ -168,7 +168,7 @@
   </div>
   <div>
       <label for="list">Liste:</label>
-      <input type="text" list="universiteler" v-model="formData.liste">
+      <input type="text" list="universiteler" name="list" v-model="formData.liste">
       <datalist id="universiteler">
           <option value="sau">Sakarya Üniveristesi</option>
           <option value="subu">Sakarya Uyg. Bil. Üniversitesi</option>
@@ -184,7 +184,7 @@
       <input type="checkbox" name="onay" value="onay" v-model="formData.onay">Onaylıyorum.
   </div>
   <button type="reset">Temizle</button>
-  <button type="button" @click="validateForm('normal')">Gönder</button>
+  <button type="button" onclick="validateForm('normal')">Gönder</button>
   <button type="button" @click="validateForm('vue')">Vue.js ile Gönder</button>
 </form>
 
@@ -196,10 +196,6 @@ function emailKontrol(email){
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
-
-
-
-
 
 var app = new Vue({
   el: '#contactForm',
@@ -239,9 +235,6 @@ var app = new Vue({
                     return;
                   }
                  
-             
-                  
-
               }
 
          
@@ -268,6 +261,90 @@ var app = new Vue({
       }
   }
 });
+</script>
+
+<script>
+
+
+function validateForm(){
+  var adf = document.forms["contactForm"]["ad"].value;
+  var soyadf = document.forms["contactForm"]["soyad"].value;
+  var sifref = document.forms["contactForm"]["sifre"].value;
+  var  cinsiyetf = document.forms["contactForm"]["cinsiyet"].value;
+  var emailf = document.forms["contactForm"]["email"].value;
+  var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var dosyaf = document.forms["contactForm"]["dosya"].value;
+  var secf = document.forms["contactForm"]["sec"].value;
+  var listf = document.forms["contactForm"]["list"].value;
+  var mesajf = document.forms["contactForm"]["mesaj"].value;
+  var onayf =document.forms["contactForm"]["onay"].checked;
+
+  if (adf == null || adf == "") {
+alert("Lütfen isminizi girin!");
+return false;
+}
+if(soyadf == null || soyadf ==""){
+  alert("Lütfen soyadınızı girin!");
+  return false;
+}
+if(sifref == null || sifref ==""){
+  alert("Lütfen şifrenizi girin!");
+  return false;
+}
+if(sifref.length < 8){
+  alert("Şifreniz en az 8 karakter olmalı");
+  return false;
+}
+if(cinsiyetf==""){
+  alert("Lütfen cinsiyet seçiniz!");
+  return false;
+
+}
+if(emailf==""){
+  alert("Lütfen e-mailinizi giriniz!");
+  return false;
+}
+if(!emailFormat.test(emailf)){
+    alert("Geçersiz e-mail lütfen e-mailinizi kontrol edin! (örn: abc@gmail.com)");
+    return false;
+}
+if(dosyaf==""){
+  alert("Lütfen dosya seçin!");
+  return false;
+}
+if(secf== ""){
+  alert("Lütfen seçim yapın");
+  return false;
+}
+if(listf==""){
+  alert("Lütfen listeden seçim yapın");
+  return false;
+}
+if(mesajf==""){
+  alert("Lütfen mesaj giriniz!");
+  return false;
+}
+if(!onayf){
+  alert("Lütfen formu onaylayın!");
+  return false;
+}
+else{
+  document.getElementById("contactForm").submit();
+  alert("Form başarılı bir şekilde gönderildi.");
+  
+
+  document.write('Ad:'+adf+ '<br>');
+  document.write('Soyad:'+soyadf+ '<br>');
+  document.write('Cinsiyet:'+cinsiyetf+ '<br>');
+  document.write('Em-ail:'+emailf+ '<br>');
+  document.write('Dosya:'+dosyaf+ '<br>');
+  document.write('Secim:'+secf+ '<br>');
+  document.write('Liste:'+listf+ '<br>');
+  document.write('Mesajınız'+mesajf+ '<br>');
+  document.write('<button onclick="window.location.reload();">Forma dön</button><br>');
+ 
+}
+}
 </script>
 
 

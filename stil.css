@@ -24,6 +24,7 @@ body {
 
 
 
+
 .container-anasayfa{
     color: white;
     font: size 17px; ;
@@ -49,6 +50,7 @@ body {
     font: bold;
     margin-bottom: -60px;
     padding-bottom: -60px;  
+    
 }
 
 
@@ -124,6 +126,10 @@ background-color: rgba(240, 248, 255, 0);
     background-color: rgb(66, 109, 68);
     color: white;
     margin-bottom: -50px;
+}
+
+.container-miras h4{
+    font-style: italic;
 }
 
 .resim-container{
