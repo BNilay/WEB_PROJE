@@ -168,12 +168,13 @@
   </div>
   <div>
       <label for="list">Liste:</label>
-      <input type="text" list="universiteler" name="list" v-model="formData.liste">
-      <datalist id="universiteler">
-          <option value="sau">Sakarya Üniveristesi</option>
-          <option value="subu">Sakarya Uyg. Bil. Üniversitesi</option>
-          <option value="kou">Kocaeli Üniversitesi</option>
-          <option value="itu">İstanbul Teknik Üniversitesi</option>
+      <input type="text" list="Projeler" name="list" v-model="formData.liste">
+      <datalist id="Projeler">
+          <option value="HTML">HTML KULLANARAK PROJE</option>
+          <option value="PHP">PHP KULLANARAK PROJE</option>
+          <option value="JAVA">JAVA KULLANARAK PROJE</option>
+          
+          
       </datalist>
   </div>
   <div>
@@ -340,7 +341,7 @@ else{
   document.write('Dosya:'+dosyaf+ '<br>');
   document.write('Secim:'+secf+ '<br>');
   document.write('Liste:'+listf+ '<br>');
-  document.write('Mesajınız'+mesajf+ '<br>');
+  document.write('Mesajınız: '+mesajf+ '<br>');
   document.write('<button onclick="window.location.reload();">Forma dön</button><br>');
  
 }
