@@ -23,9 +23,9 @@
     display: flex;
     align-items: center;
   }
-  /* Başlık metni için stil */
+  
  .h1 {
-    margin: 0 10px; /* Başlık ile resim arasında boşluk bırak */
+    margin: 0 10px; 
   }
 
 body {
@@ -82,6 +82,9 @@ font-weight: 600;
 
 .nav-item:hover{
     background-color: rgb(109, 109, 107);
+  margin-left: -30px;
+   
+    
 }
 
 .carousel {
@@ -89,10 +92,7 @@ font-weight: 600;
     margin: auto;
     
 }
-/*
-.carousel-inner {
-max-height: 450px;
-}*/
+
 .carousel {
     
     max-width: 100%;
@@ -105,7 +105,7 @@ max-width: 100%;
 margin: auto;
 }
 .carousel img{
-    max-width: 100%; /* Resmin maksimum genişliği sayfa genişliğine eşit olacak şekilde ayarlanır */
+    max-width: 100%; 
     height: auto; 
 }
 
@@ -280,18 +280,18 @@ button:hover {
   }
   
   .formgonder {
-    margin-bottom: 20px; /* Form ve butonlar arasındaki boşluğu ayarlar */
+    margin-bottom: 20px;  
     margin-top: 150px;
   }
   
   .button-container {
     display: flex;
-    justify-content: center; /* Butonları yatay olarak ortalar */
+    justify-content: center; 
   }
   
   .button-container input[type="submit"] ,
   .button-container input[type="reset"] {
-    margin-left: 10px; /* Butonlar arasındaki boşluğu ayarlar */
+    margin-left: 10px; 
     color: #ffffff;
     background-color:rgb(41, 76, 43);
   }
@@ -392,11 +392,11 @@ button:hover {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+    box-sizing: border-box; 
 }
 
 #contactForm textarea {
-    resize: vertical; /* Yalnızca yüksekliği değiştirilebilir */
+    resize: vertical; 
 }
 
 #contactForm button {
@@ -426,23 +426,23 @@ button:hover {
     background-color: rgb(66, 109, 68);
 }
 .acarlarsyf {
-    text-align: center; /* Resmi sayfa genişliğine göre ortala */
-    padding: 50px 0; /* Resimden sayfa kenarlarına olan boşluk */
+    text-align: center; 
+    padding: 50px 0; 
     color: white;
 }
 
 /* Acarlar resmi stil */
 .acarlarresim {
-    max-width: 100%; /* Resmin maksimum genişliği sayfa genişliğine eşit olacak şekilde ayarlanır */
-    height: auto; /* Otomatik yükseklik */
+    max-width: 100%; 
+    height: auto; 
 }
 .sapancasyf{
-    text-align: center; /* Resmi sayfa genişliğine göre ortala */
-    padding: 50px 0; /* Resimden sayfa kenarlarına olan boşluk */
+    text-align: center; 
+    padding: 50px 0; 
     color: white;
 }
 .sapancaresim{
-    max-width: 100%; /* Resmin maksimum genişliği sayfa genişliğine eşit olacak şekilde ayarlanır */
+    max-width: 100%; 
     height: auto; 
 }
 .container-sapanca-body{
@@ -458,12 +458,12 @@ button:hover {
 }
 
 .yerlersyf{
-    text-align: center; /* Resmi sayfa genişliğine göre ortala */
-    padding: 50px 0; /* Resimden sayfa kenarlarına olan boşluk */
+    text-align: center; 
+    padding: 50px 0; 
     color: white;
 }
 .yerlerresim{
-    max-width: 100%; /* Resmin maksimum genişliği sayfa genişliğine eşit olacak şekilde ayarlanır */
+    max-width: 100%; 
     height: auto; 
 }
 .container-yerler-body{
